@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		067C3E44928B43AE978EC33D /* Pods_Lottery649_Lottery649UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC209770423DAEE2FDAF3A26 /* Pods_Lottery649_Lottery649UITests.framework */; };
+		62551086249C29F300474508 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551085249C29F300474508 /* TitleViewController.swift */; };
+		62731D9B247E1909001E110F /* LotteryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731D9A247E1909001E110F /* LotteryBrain.swift */; };
+		62731DA0247E220D001E110F /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731D9F247E220D001E110F /* NetworkingClient.swift */; };
+		62731DA2247F2630001E110F /* RecentWinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DA1247F2630001E110F /* RecentWinController.swift */; };
+		62731DA4247F26F2001E110F /* WinnerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DA3247F26F2001E110F /* WinnerCell.swift */; };
+		62731DA624801792001E110F /* RecentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DA524801792001E110F /* RecentData.swift */; };
+		62731DA82480180C001E110F /* RecentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731DA72480180C001E110F /* RecentModel.swift */; };
 		62860487247CBD470004F80D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62860486247CBD470004F80D /* AppDelegate.swift */; };
 		62860489247CBD470004F80D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62860488247CBD470004F80D /* SceneDelegate.swift */; };
-		6286048B247CBD470004F80D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286048A247CBD470004F80D /* ViewController.swift */; };
+		6286048B247CBD470004F80D /* LotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286048A247CBD470004F80D /* LotteryViewController.swift */; };
 		6286048E247CBD470004F80D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6286048C247CBD470004F80D /* Main.storyboard */; };
 		62860490247CBD4E0004F80D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6286048F247CBD4E0004F80D /* Assets.xcassets */; };
 		62860493247CBD4E0004F80D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62860491247CBD4E0004F80D /* LaunchScreen.storyboard */; };
 		6286049E247CBD4E0004F80D /* Lottery649Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6286049D247CBD4E0004F80D /* Lottery649Tests.swift */; };
 		628604A9247CBD4E0004F80D /* Lottery649UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628604A8247CBD4E0004F80D /* Lottery649UITests.swift */; };
+		628604B7247CBF470004F80D /* LotteryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628604B6247CBF470004F80D /* LotteryCell.swift */; };
+		628604B9247CBFF60004F80D /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628604B8247CBFF60004F80D /* Lottery.swift */; };
+		628604BB247CCD2A0004F80D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628604BA247CCD2A0004F80D /* Extension.swift */; };
+		A1AE4CC483850ACE600926B6 /* Pods_Lottery649.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3387109F63F8EBC1AAA6978C /* Pods_Lottery649.framework */; };
+		F92E0F54A0EE10B2DD764068 /* Pods_Lottery649Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E56883072168BB3B226399A9 /* Pods_Lottery649Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +48,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		057309890803FA6695D2EFDD /* Pods-Lottery649.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649.debug.xcconfig"; path = "Target Support Files/Pods-Lottery649/Pods-Lottery649.debug.xcconfig"; sourceTree = "<group>"; };
+		069292D37B544134FCFE9B9C /* Pods-Lottery649Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649Tests.debug.xcconfig"; path = "Target Support Files/Pods-Lottery649Tests/Pods-Lottery649Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		08A69DDF7BFBEF1005BCC58E /* Pods-Lottery649Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649Tests.release.xcconfig"; path = "Target Support Files/Pods-Lottery649Tests/Pods-Lottery649Tests.release.xcconfig"; sourceTree = "<group>"; };
+		21A93AA4041870CDF7C1CE5C /* Pods-Lottery649-Lottery649UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649-Lottery649UITests.debug.xcconfig"; path = "Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3387109F63F8EBC1AAA6978C /* Pods_Lottery649.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery649.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62551085249C29F300474508 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		62731D9A247E1909001E110F /* LotteryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryBrain.swift; sourceTree = "<group>"; };
+		62731D9F247E220D001E110F /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		62731DA1247F2630001E110F /* RecentWinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentWinController.swift; sourceTree = "<group>"; };
+		62731DA3247F26F2001E110F /* WinnerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WinnerCell.swift; path = Lottery649/Controller/WinnerCell.swift; sourceTree = SOURCE_ROOT; };
+		62731DA524801792001E110F /* RecentData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecentData.swift; path = Lottery649/Model/RecentData.swift; sourceTree = SOURCE_ROOT; };
+		62731DA72480180C001E110F /* RecentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentModel.swift; sourceTree = "<group>"; };
 		62860483247CBD470004F80D /* Lottery649.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery649.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62860486247CBD470004F80D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		62860488247CBD470004F80D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6286048A247CBD470004F80D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6286048A247CBD470004F80D /* LotteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryViewController.swift; sourceTree = "<group>"; };
 		6286048D247CBD470004F80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6286048F247CBD4E0004F80D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		62860492247CBD4E0004F80D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +74,13 @@
 		628604A4247CBD4E0004F80D /* Lottery649UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lottery649UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		628604A8247CBD4E0004F80D /* Lottery649UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery649UITests.swift; sourceTree = "<group>"; };
 		628604AA247CBD4E0004F80D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		628604B6247CBF470004F80D /* LotteryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryCell.swift; sourceTree = "<group>"; };
+		628604B8247CBFF60004F80D /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
+		628604BA247CCD2A0004F80D /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		86157DDC44486A3489E28AEA /* Pods-Lottery649.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649.release.xcconfig"; path = "Target Support Files/Pods-Lottery649/Pods-Lottery649.release.xcconfig"; sourceTree = "<group>"; };
+		9BA52C66D1997B58880F4241 /* Pods-Lottery649-Lottery649UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649-Lottery649UITests.release.xcconfig"; path = "Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E56883072168BB3B226399A9 /* Pods_Lottery649Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery649Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC209770423DAEE2FDAF3A26 /* Pods_Lottery649_Lottery649UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery649_Lottery649UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AE4CC483850ACE600926B6 /* Pods_Lottery649.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F92E0F54A0EE10B2DD764068 /* Pods_Lottery649Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +104,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				067C3E44928B43AE978EC33D /* Pods_Lottery649_Lottery649UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62731D9C247E2103001E110F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62731D9F247E220D001E110F /* NetworkingClient.swift */,
+				62731DA524801792001E110F /* RecentData.swift */,
+				62731DA72480180C001E110F /* RecentModel.swift */,
+				628604B8247CBFF60004F80D /* Lottery.swift */,
+				62731D9A247E1909001E110F /* LotteryBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62731D9D247E2121001E110F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62731DA3247F26F2001E110F /* WinnerCell.swift */,
+				628604B6247CBF470004F80D /* LotteryCell.swift */,
+				6286048C247CBD470004F80D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62731D9E247E2136001E110F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				62731DA1247F2630001E110F /* RecentWinController.swift */,
+				62551085249C29F300474508 /* TitleViewController.swift */,
+				6286048A247CBD470004F80D /* LotteryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		6286047A247CBD470004F80D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +150,8 @@
 				6286049C247CBD4E0004F80D /* Lottery649Tests */,
 				628604A7247CBD4E0004F80D /* Lottery649UITests */,
 				62860484247CBD470004F80D /* Products */,
+				FFBCFACA7ED4997BBAD83C74 /* Pods */,
+				C6C40752B97C623DDE50D86A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +170,10 @@
 			children = (
 				62860486247CBD470004F80D /* AppDelegate.swift */,
 				62860488247CBD470004F80D /* SceneDelegate.swift */,
-				6286048A247CBD470004F80D /* ViewController.swift */,
-				6286048C247CBD470004F80D /* Main.storyboard */,
+				62731D9C247E2103001E110F /* Model */,
+				62731D9D247E2121001E110F /* View */,
+				62731D9E247E2136001E110F /* Controller */,
+				628604BA247CCD2A0004F80D /* Extension.swift */,
 				6286048F247CBD4E0004F80D /* Assets.xcassets */,
 				62860491247CBD4E0004F80D /* LaunchScreen.storyboard */,
 				62860494247CBD4E0004F80D /* Info.plist */,
@@ -128,6 +199,29 @@
 			path = Lottery649UITests;
 			sourceTree = "<group>";
 		};
+		C6C40752B97C623DDE50D86A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3387109F63F8EBC1AAA6978C /* Pods_Lottery649.framework */,
+				FC209770423DAEE2FDAF3A26 /* Pods_Lottery649_Lottery649UITests.framework */,
+				E56883072168BB3B226399A9 /* Pods_Lottery649Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFBCFACA7ED4997BBAD83C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				057309890803FA6695D2EFDD /* Pods-Lottery649.debug.xcconfig */,
+				86157DDC44486A3489E28AEA /* Pods-Lottery649.release.xcconfig */,
+				21A93AA4041870CDF7C1CE5C /* Pods-Lottery649-Lottery649UITests.debug.xcconfig */,
+				9BA52C66D1997B58880F4241 /* Pods-Lottery649-Lottery649UITests.release.xcconfig */,
+				069292D37B544134FCFE9B9C /* Pods-Lottery649Tests.debug.xcconfig */,
+				08A69DDF7BFBEF1005BCC58E /* Pods-Lottery649Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 628604AD247CBD4E0004F80D /* Build configuration list for PBXNativeTarget "Lottery649" */;
 			buildPhases = (
+				11D45532F8FE45EF93D02C16 /* [CP] Check Pods Manifest.lock */,
 				6286047F247CBD470004F80D /* Sources */,
 				62860480247CBD470004F80D /* Frameworks */,
 				62860481247CBD470004F80D /* Resources */,
+				922482EAE8417411E67ADE91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 628604B0247CBD4E0004F80D /* Build configuration list for PBXNativeTarget "Lottery649Tests" */;
 			buildPhases = (
+				B51B9636D8B65D1E1F9873B2 /* [CP] Check Pods Manifest.lock */,
 				62860495247CBD4E0004F80D /* Sources */,
 				62860496247CBD4E0004F80D /* Frameworks */,
 				62860497247CBD4E0004F80D /* Resources */,
@@ -170,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 628604B3247CBD4E0004F80D /* Build configuration list for PBXNativeTarget "Lottery649UITests" */;
 			buildPhases = (
+				814AA57DABE91CB2F36358BA /* [CP] Check Pods Manifest.lock */,
 				628604A0247CBD4E0004F80D /* Sources */,
 				628604A1247CBD4E0004F80D /* Frameworks */,
 				628604A2247CBD4E0004F80D /* Resources */,
+				4D2EE7EAA4D557E8A89E3CA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +353,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		11D45532F8FE45EF93D02C16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lottery649-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D2EE7EAA4D557E8A89E3CA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		814AA57DABE91CB2F36358BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lottery649-Lottery649UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		922482EAE8417411E67ADE91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottery649/Pods-Lottery649-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lottery649/Pods-Lottery649-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lottery649/Pods-Lottery649-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B51B9636D8B65D1E1F9873B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lottery649Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6286047F247CBD470004F80D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6286048B247CBD470004F80D /* ViewController.swift in Sources */,
+				62731DA0247E220D001E110F /* NetworkingClient.swift in Sources */,
+				6286048B247CBD470004F80D /* LotteryViewController.swift in Sources */,
 				62860487247CBD470004F80D /* AppDelegate.swift in Sources */,
 				62860489247CBD470004F80D /* SceneDelegate.swift in Sources */,
+				62731DA2247F2630001E110F /* RecentWinController.swift in Sources */,
+				628604BB247CCD2A0004F80D /* Extension.swift in Sources */,
+				62731DA4247F26F2001E110F /* WinnerCell.swift in Sources */,
+				628604B9247CBFF60004F80D /* Lottery.swift in Sources */,
+				62731D9B247E1909001E110F /* LotteryBrain.swift in Sources */,
+				628604B7247CBF470004F80D /* LotteryCell.swift in Sources */,
+				62731DA82480180C001E110F /* RecentModel.swift in Sources */,
+				62731DA624801792001E110F /* RecentData.swift in Sources */,
+				62551086249C29F300474508 /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +644,7 @@
 		};
 		628604AE247CBD4E0004F80D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 057309890803FA6695D2EFDD /* Pods-Lottery649.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +663,7 @@
 		};
 		628604AF247CBD4E0004F80D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86157DDC44486A3489E28AEA /* Pods-Lottery649.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +682,7 @@
 		};
 		628604B1247CBD4E0004F80D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069292D37B544134FCFE9B9C /* Pods-Lottery649Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +705,7 @@
 		};
 		628604B2247CBD4E0004F80D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A69DDF7BFBEF1005BCC58E /* Pods-Lottery649Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +728,7 @@
 		};
 		628604B4247CBD4E0004F80D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21A93AA4041870CDF7C1CE5C /* Pods-Lottery649-Lottery649UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +749,7 @@
 		};
 		628604B5247CBD4E0004F80D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA52C66D1997B58880F4241 /* Pods-Lottery649-Lottery649UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

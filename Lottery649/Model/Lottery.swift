@@ -9,10 +9,9 @@
 import UIKit
 
 class Lottery {
+    
     var label: String
-    
-    
-    
+
     init(label: String) {
         self.label = label
     }

@@ -8,12 +8,8 @@
 
 import UIKit
 
-//protocol LotteryBrainDelegate {
-//    func generateRandomNumbers()
-//    func createData(lotArray: [Lottery]) -> Lottery
-//}
-
 class LotteryViewController: UIViewController {
+    
     let cellId = "lotteryCell"
     var lotteryResults: [Lottery] = []
     var lotteryBrain = LotteryBrain()
@@ -41,40 +37,41 @@ class LotteryViewController: UIViewController {
         return ivBG
     }()
     
-//    let imageViewLogo: UIImageView = {
-//        let ivL = UIImageView()
-//        ivL.image = UIImage(named: "lotto-649")
-//        ivL.contentMode = .scaleAspectFit
-//        return ivL
-//    }()
-    
     
     var rollButton: UIButton = {
         let rbtn = UIButton(type: .system)
         rbtn.setTitle("Roll", for: .normal)
         rbtn.setTitleColor(.red, for: .normal)
         rbtn.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
+        
         return rbtn
     }()
     
+    var useButton: UIButton = {
+        var usebtn = UIButton(type: .system)
+        usebtn.setTitle("Use", for: .normal)
+        usebtn.setTitleColor(.green, for: .normal)
+        return usebtn
+    }()
     
-    @objc func buttonPressed() {
+    
+    @objc func buttonPressed(_ sender: UIButton) {
         lotteryResults = lotteryBrain.createData()
         self.collectionView.reloadData()
         
+       
+        
     }
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView.backgroundView = imageView
-//        view.addSubview(imageViewLogo)
-//        logoSpecs()
         view.addSubview(collectionView)
         cvSpecs()
         view.addSubview(rollButton)
-        rollButtonSpecs()
+        view.addSubview(useButton)
+        buttonSpecs()
         registerCells()
     
     }
@@ -88,19 +85,13 @@ class LotteryViewController: UIViewController {
         collectionView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
     }
     
-    func rollButtonSpecs(){
+    func buttonSpecs(){
         let rollButtonSpecs = rollButton.anchor(collectionView.topAnchor, left: collectionView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 10, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 130).first
+        let useButtonSpecs = useButton.anchor(collectionView.topAnchor, left: nil, bottom: nil, right: collectionView.rightAnchor, topConstant: 0, leftConstant: 30, bottomConstant: 0, rightConstant: 50, widthConstant: 60, heightConstant: 130).first
+        
+        
         
     }
-    
-//    func logoSpecs() {
-//        let logoSpecs = imageViewLogo.anchor(collectionView.topAnchor, left: nil, bottom: nil, right: collectionView.rightAnchor, topConstant: 0, leftConstant: 10, bottomConstant: 0, rightConstant: 0, widthConstant: 130, heightConstant: 130)
-//
-//    }
-    
-    
-    
-    
     
 }
 
@@ -123,11 +114,7 @@ extension LotteryViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         let lotteryCell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! LotteryCell
         
-       
-        print("bg is set")
-        
         let newItem = lotteryResults[indexPath.item]
-        print(newItem)
         lotteryCell.setupCell(Lottery: newItem)
         
         return lotteryCell

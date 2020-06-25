@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class LotteryBrain {
     
     var lotteryResults2: [Lottery] = []
@@ -30,29 +28,21 @@ class LotteryBrain {
     }
     
     func createData() -> [Lottery] {
-        print("generating")
+        
         var numbersGenerated = generateRandomNumbers()
         numbersGenerated.sort(by: <)
         var indexOfArray = 0
-        var newItem = Lottery(label: "")
         
         while lotteryResults2.count != 6 {
-                let number = String(numbersGenerated[indexOfArray])
-                indexOfArray += 1
-                print(number)
-                newItem = Lottery(label: number)
-                print(newItem)
-                lotteryResults2.append(newItem)
-            
-               }
-    
+            let number = String(numbersGenerated[indexOfArray])
+            indexOfArray += 1
+            print(number)
+            var newItem = Lottery(label: number)
+            lotteryResults2.append(newItem)
+        }
+        
         return lotteryResults2
     }
-    
-    
-    
-    
-    
     
     
 }

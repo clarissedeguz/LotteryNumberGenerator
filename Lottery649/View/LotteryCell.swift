@@ -10,8 +10,6 @@ import UIKit
 
 class LotteryCell: UICollectionViewCell {
     
-    var lottery: Lottery?
-    
     var imageView: UIImageView = {
         var iv = UIImageView()
         iv.image = UIImage(named: "lotteryBall")
@@ -25,7 +23,6 @@ class LotteryCell: UICollectionViewCell {
         label.textColor = .white
         label.font = label.font.withSize(25)
         label.adjustsFontSizeToFitWidth = false
-        
         return label
     }()
     
@@ -33,21 +30,12 @@ class LotteryCell: UICollectionViewCell {
         addSubview(imageView)
         addSubview(label)
         
-        var imageViewSpecs = imageView.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-        var labelSpecs = label.anchor(nil, left:nil, bottom: centerYAnchor , right: centerXAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
-        
+        let imageViewSpecs = imageView.anchor(topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
+        let labelSpecs = label.anchor(nil, left:nil, bottom: centerYAnchor , right: centerXAnchor, topConstant: 0, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 0)
         
         label.text = Lottery.label
         
         
     }
-    
-    
-    
-    
-    
-    
-    
-    
     
 }
