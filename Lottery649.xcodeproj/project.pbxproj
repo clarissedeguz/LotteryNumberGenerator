@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		067C3E44928B43AE978EC33D /* Pods_Lottery649_Lottery649UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC209770423DAEE2FDAF3A26 /* Pods_Lottery649_Lottery649UITests.framework */; };
+		620B1DA624A51DF600C55B0D /* proxima bold in Resources */ = {isa = PBXBuildFile; fileRef = 620B1DA524A51DF500C55B0D /* proxima bold */; };
 		62551086249C29F300474508 /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62551085249C29F300474508 /* TitleViewController.swift */; };
 		62731D9B247E1909001E110F /* LotteryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731D9A247E1909001E110F /* LotteryBrain.swift */; };
 		62731DA0247E220D001E110F /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62731D9F247E220D001E110F /* NetworkingClient.swift */; };
@@ -53,6 +54,7 @@
 		08A69DDF7BFBEF1005BCC58E /* Pods-Lottery649Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649Tests.release.xcconfig"; path = "Target Support Files/Pods-Lottery649Tests/Pods-Lottery649Tests.release.xcconfig"; sourceTree = "<group>"; };
 		21A93AA4041870CDF7C1CE5C /* Pods-Lottery649-Lottery649UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottery649-Lottery649UITests.debug.xcconfig"; path = "Target Support Files/Pods-Lottery649-Lottery649UITests/Pods-Lottery649-Lottery649UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3387109F63F8EBC1AAA6978C /* Pods_Lottery649.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottery649.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		620B1DA524A51DF500C55B0D /* proxima bold */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "proxima bold"; sourceTree = "<group>"; };
 		62551085249C29F300474508 /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 		62731D9A247E1909001E110F /* LotteryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotteryBrain.swift; sourceTree = "<group>"; };
 		62731D9F247E220D001E110F /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
@@ -136,8 +138,8 @@
 		62731D9E247E2136001E110F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				62731DA1247F2630001E110F /* RecentWinController.swift */,
 				62551085249C29F300474508 /* TitleViewController.swift */,
+				62731DA1247F2630001E110F /* RecentWinController.swift */,
 				6286048A247CBD470004F80D /* LotteryViewController.swift */,
 			);
 			path = Controller;
@@ -170,6 +172,7 @@
 			children = (
 				62860486247CBD470004F80D /* AppDelegate.swift */,
 				62860488247CBD470004F80D /* SceneDelegate.swift */,
+				620B1DA524A51DF500C55B0D /* proxima bold */,
 				62731D9C247E2103001E110F /* Model */,
 				62731D9D247E2121001E110F /* View */,
 				62731D9E247E2136001E110F /* Controller */,
@@ -332,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				62860493247CBD4E0004F80D /* LaunchScreen.storyboard in Resources */,
+				620B1DA624A51DF600C55B0D /* proxima bold in Resources */,
 				62860490247CBD4E0004F80D /* Assets.xcassets in Resources */,
 				6286048E247CBD470004F80D /* Main.storyboard in Resources */,
 			);

@@ -10,6 +10,7 @@ import UIKit
 
 class LotteryBrain {
     
+    
     var lotteryResults2: [Lottery] = []
     
     func generateRandomNumbers() -> [Int] {
@@ -41,8 +42,13 @@ class LotteryBrain {
             lotteryResults2.append(newItem)
         }
         
+        
+        
         return lotteryResults2
     }
+    
+    
+    
     
     
 }

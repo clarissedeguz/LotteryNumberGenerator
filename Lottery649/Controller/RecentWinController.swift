@@ -15,6 +15,7 @@ class RecentWinController: UIViewController {
     let cellId = "winnerCell"
     var winnerCell = WinnerCell()
     var networkingClient = NetworkingClient()
+    var lotteryVC = LotteryViewController()
     var info: [RecentModel] = []
     var results:[RecentModel] = []
     
@@ -53,6 +54,8 @@ class RecentWinController: UIViewController {
         print("test test WORKS!")
         let vc = LotteryViewController()
         self.present(vc, animated: true, completion: nil)
+
+        
     }
     
     

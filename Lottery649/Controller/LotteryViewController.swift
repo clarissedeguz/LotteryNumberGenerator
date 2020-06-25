@@ -17,9 +17,9 @@ class LotteryViewController: UIViewController {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 130, left: 20, bottom: 19.5, right: 30)
+        layout.sectionInset = UIEdgeInsets(top: 125.5, left: 20, bottom: 19, right: 30)
         layout.scrollDirection = .horizontal
-        layout.minimumInteritemSpacing = 35
+        layout.minimumInteritemSpacing = 30
         layout.minimumLineSpacing = 60
         
         let cv = UICollectionView(frame:.zero, collectionViewLayout: layout)
@@ -40,8 +40,8 @@ class LotteryViewController: UIViewController {
     
     var rollButton: UIButton = {
         let rbtn = UIButton(type: .system)
-        rbtn.setTitle("Roll", for: .normal)
-        rbtn.setTitleColor(.red, for: .normal)
+        rbtn.setTitle("ROLL", for: .normal)
+        rbtn.setTitleColor(.white, for: .normal)
         rbtn.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
         
         return rbtn
@@ -55,11 +55,12 @@ class LotteryViewController: UIViewController {
     }()
     
     
-    @objc func buttonPressed(_ sender: UIButton) {
+    @objc func buttonPressed() {
         lotteryResults = lotteryBrain.createData()
         self.collectionView.reloadData()
+        lotteryBrain.lotteryResults2.removeAll()
         
-       
+        
         
     }
 
@@ -83,10 +84,12 @@ class LotteryViewController: UIViewController {
         collectionView.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier:  0).isActive = true
         collectionView.trailingAnchor.constraint(equalToSystemSpacingAfter: view.trailingAnchor, multiplier: 40).isActive = true
         collectionView.heightAnchor.constraint(equalToConstant: view.frame.height).isActive = true
+        collectionView.contentInset.top = -10
+        collectionView.contentInset.bottom = 60
     }
     
     func buttonSpecs(){
-        let rollButtonSpecs = rollButton.anchor(collectionView.topAnchor, left: collectionView.leftAnchor, bottom: nil, right: nil, topConstant: 0, leftConstant: 10, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 130).first
+        let rollButtonSpecs =  rollButton.anchor(view.topAnchor, left: nil, bottom: nil, right: view.rightAnchor, topConstant: -40, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 130).first
         let useButtonSpecs = useButton.anchor(collectionView.topAnchor, left: nil, bottom: nil, right: collectionView.rightAnchor, topConstant: 0, leftConstant: 30, bottomConstant: 0, rightConstant: 50, widthConstant: 60, heightConstant: 130).first
         
         
@@ -144,6 +147,7 @@ extension LotteryViewController: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: size, height: size)
     }
     
+
     
 }
 

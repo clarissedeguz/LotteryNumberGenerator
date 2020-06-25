@@ -14,13 +14,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money" translatesAutoresizingMaskIntoConstraints="NO" id="0ar-xA-L3s">
+                                <rect key="frame" x="108" y="312" width="233" height="302"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aA4-Ar-wuo">
+                                <rect key="frame" x="70" y="631" width="309" height="162"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LOTTO RANDOM NUMBER GENERATOR">
+                                        <attributes>
+                                            <color key="NSColor" red="0.94640307741116747" green="0.94640307741116747" blue="0.94640307741116747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="38" name="HelveticaNeue-CondensedBold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gcc-lB-ggy">
+                                <rect key="frame" x="108" y="312" width="233" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="segueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fuq-ua-CNr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLICK HERE!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g32-6V-Fo4">
+                                <rect key="frame" x="153" y="277" width="143" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="UOZ-85-NWV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55235308409999995" green="0.77757167819999995" blue="0.95665663479999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="g32-6V-Fo4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="1Cm-ao-7Cy"/>
+                            <constraint firstItem="0ar-xA-L3s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="15" id="ELN-Rw-GZG"/>
+                            <constraint firstItem="0ar-xA-L3s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="17.5" id="FgY-ce-78P"/>
+                            <constraint firstItem="g32-6V-Fo4" firstAttribute="centerX" secondItem="0ar-xA-L3s" secondAttribute="centerX" id="JeI-mM-ujQ"/>
+                            <constraint firstItem="0ar-xA-L3s" firstAttribute="top" secondItem="g32-6V-Fo4" secondAttribute="bottom" constant="8" id="ceq-qp-0ZK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0ar-xA-L3s" secondAttribute="trailing" constant="73" id="ef7-Rh-tcE"/>
+                            <constraint firstItem="g32-6V-Fo4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="233" id="fUN-ht-7o4"/>
+                            <constraint firstItem="0ar-xA-L3s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="yih-UK-S0d"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="92"/>
+            <point key="canvasLocation" x="131.8840579710145" y="91.741071428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="money" width="170.5" height="170.5"/>
+    </resources>
 </document>

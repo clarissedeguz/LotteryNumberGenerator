@@ -20,7 +20,7 @@ class LotteryCell: UICollectionViewCell {
     
     var label: UILabel = {
         var label = UILabel()
-        label.textColor = .white
+        label.textColor = .darkGray
         label.font = label.font.withSize(25)
         label.adjustsFontSizeToFitWidth = false
         return label
