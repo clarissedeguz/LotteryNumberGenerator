@@ -47,13 +47,6 @@ class LotteryViewController: UIViewController {
         return rbtn
     }()
     
-    var useButton: UIButton = {
-        var usebtn = UIButton(type: .system)
-        usebtn.setTitle("Use", for: .normal)
-        usebtn.setTitleColor(.green, for: .normal)
-        return usebtn
-    }()
-    
     
     @objc func buttonPressed() {
         lotteryResults = lotteryBrain.createData()
@@ -71,9 +64,9 @@ class LotteryViewController: UIViewController {
         view.addSubview(collectionView)
         cvSpecs()
         view.addSubview(rollButton)
-        view.addSubview(useButton)
         buttonSpecs()
         registerCells()
+        buttonPressed()
     
     }
     
@@ -90,8 +83,7 @@ class LotteryViewController: UIViewController {
     
     func buttonSpecs(){
         let rollButtonSpecs =  rollButton.anchor(view.topAnchor, left: nil, bottom: nil, right: view.rightAnchor, topConstant: -40, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 60, heightConstant: 130).first
-        let useButtonSpecs = useButton.anchor(collectionView.topAnchor, left: nil, bottom: nil, right: collectionView.rightAnchor, topConstant: 0, leftConstant: 30, bottomConstant: 0, rightConstant: 50, widthConstant: 60, heightConstant: 130).first
-        
+     
         
         
     }
